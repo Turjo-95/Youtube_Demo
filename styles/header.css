@@ -3,20 +3,88 @@
   height: 57px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
 }
 
 .left-section{
-  width: 125px;
-  background-color: lightblue;
+  display: flex;
+  align-items: center;
+
+}
+
+.hamburger-menu{
+  height: 24px;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+.youtube-logo{
+  height: 20px;
 }
 
 .middle-section{
   flex: 1;
-  background-color: lightpink;
   max-width: 500px;
   margin-left: 70px;
   margin-right: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar{
+  flex: 1;
+  height: 36px;
+  padding-left: 12px;
+  padding-top: 3px;
+  border: 1px;
+  border-color: rgb(204, 204, 204);
+  border-style: solid;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  width: 0;
+  box-shadow: inset 0px 1px 2px rgb(238, 238, 238);;
+
+}
+
+.search-bar::placeholder{
+  font-family: Roboto, Arial;
+  font-size: 16px;
+  
+  
+}
+
+
+.search-logo{
+  height: 40px;
+  width: 64px;
+  margin-left: -1px;
+  border: 1px;
+  border-color: rgb(204, 204, 204);
+  background-color: rgb(247, 247, 247);
+  border-style: solid;
+}
+
+.search-logo-pic{
+  height: 24px;
+  padding-top: 2px;
+  
+
+}
+
+.voice-search{
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border-style: none;
+  margin-left: 10px;
+  background-color: rgb(247, 247, 247);
+  
+}
+
+.voice-search-pic{
+  height: 24px;
+  padding-top: 2px;
 }
 
 .right-section{
@@ -24,8 +92,8 @@
   background-color: lightblue;
 }
 
-.search-bar{
-  width: 400px;
-  height: 20px;
+.hamburger-menu, .voice-search-pic, .search-bar,
+.voice-search, .youtube-logo, .search-logo{
+  cursor: pointer;
 }
 
